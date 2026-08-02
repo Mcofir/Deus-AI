@@ -1,0 +1,36 @@
+{
+  "_readme": "אלה מפתחות קונפיג חדשים/רלוונטיים לתכונות שנוספו. אינכם חייבים להוסיף אותם ידנית ל-config.json - ברוב המקרים יש כבר ברירת מחדל הגיונית בקוד עצמו (ראו commands.py/_DEFAULT_PHRASES, ram_cleaner.py, translate.py וכו'). זהו רק תיעוד/דוגמה למה שאפשר לכוונן.",
+
+  "translate": {
+    "target_lang": "iw",
+    "speak": true,
+    "speech_rate": 175,
+    "popup_duration_ms": 6000
+  },
+
+  "ram_clean": {
+    "close_camera": false,
+    "exclude_processes": [],
+    "extra_targets": []
+  },
+
+  "commands": {
+    "recording_sample_rate": 44100,
+    "clicker_interval_sec": 0.5
+  },
+
+  "sites": {
+    "_comment": "אופציונלי - כל שם/כתובת שתוסיפו כאן מתווסף לברירות המחדל (DEFAULT_SITES ב-ai_engine/commands.py: שאזאם, pdf, פייסבוק, אינסטגרם, טיקטוק, לינקדין, אימייל) ולא דורס אותן. ניתן גם לנהל דרך תפריט המגש 'ניהול אתרים'."
+  },
+
+  "video_download": {
+    "dir": null,
+    "_comment": "null = תיקיית Downloads של המשתמש (ברירת מחדל)"
+  },
+
+  "sounds": {
+    "files": {
+      "_comment": "אפשר להוסיף כאן קבצי צליל לאירועים החדשים - שם הקובץ נופל חזרה לשם האירוע אם לא הוגדר: image_search, translate, ram_clean, delete_line, download_video, lock_pc, open_site, record_start, record_stop, clicker_start, clicker_stop"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# הוסיפו את השורות האלה ל-requirements.txt הקיים שלכם.
+# אלה חבילות DLL בלבד (לא CUDA Toolkit מלא) - לא דורשות התקנה נפרדת
+# מה-NVIDIA, לא דורשות הרשאות מנהל, ולא נוגעות בשאר המערכת של המשתמש.
+# כל מה שנדרש מהמשתמש: כרטיס NVIDIA + דרייבר עדכני יחסית (מספיק כל
+# דרייבר שהותקן בשנה-שנתיים האחרונות דרך Windows Update / GeForce
+# Experience - אין צורך "להתאים" גרסת CUDA לדגם הכרטיס הספציפי).
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+ctranslate2>=4.0
+
+# faster-whisper צריך גם huggingface_hub כדי למשוך את
+# ivrit-ai/whisper-large-v3-ct2 אוטומטית בהפעלה הראשונה ולשמור אותו
+# במטמון המקומי (~\.cache\huggingface) - לרוב כבר מותקן כתלות של
+# faster-whisper, אך מוזכר כאן ליתר ביטחון.
+huggingface_hub

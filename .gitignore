@@ -1,0 +1,27 @@
+# קבצי build/dist - נבנים מקומית דרך build_exe.bat, לא צריכים להיות
+# בהיסטוריית git (גדולים, בינאריים). ה-exe/installer עצמם עולים
+# כ-Release assets במקום.
+build/
+dist/
+installer_output/
+Deus.spec
+
+# לוגים שנוצרים מ-build_exe.bat
+build_log*.txt
+
+# פייתון
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+
+# הגדרות מקומיות של Claude Code (לא רלוונטי לפרויקט עצמו)
+.claude/
+
+# קבצי OS/עורך
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

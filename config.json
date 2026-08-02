@@ -1,0 +1,117 @@
+{
+  "wake_words": [
+    "דאוס",
+    "דיוס",
+    "דעוס",
+    "דאוז",
+    "deus",
+    "daus",
+"נורס"
+  ],
+  "type_mode_words": [
+    "הקלדה",
+    "הקלד"
+  ],
+  "fuzzy_threshold": 0.82,
+  "commands": {
+    "dictation_start_words": ["תמלל", "תמלול", "תכתוב"],
+    "dictation_stop_words": ["סטופ", "עצור", "תפסיק"],
+    "claude_code_words": ["פתח קלוד קוד", "תפתח קלוד קוד", "קלוד קוד", "קלוד"],
+    "open_app_words": ["פתח את", "תפתח את", "פתח"],
+    "google_search_words": ["חפש בגוגל", "תחפש בגוגל", "גוגל חפש"],
+    "youtube_search_words": ["חפש ביוטיוב", "תחפש ביוטיוב", "יוטיוב חפש"],
+    "script_words": ["הפעל סקריפט", "תפעיל סקריפט"],
+    "macro_learn_words": ["תלמד מאקרו", "למד מאקרו"],
+    "macro_play_words": ["תפעיל מקרו", "הפעל מקרו"],
+    "open_chat_words": ["צאט", "צ'אט", "פתח צאט", "תפתח צאט", "שט", "צט", "צ'ת", "צ'את", "תשת", "תשט", "טשט"],
+    "screenshot_words": ["צלם מסך", "תצלם מסך", "צילום מסך"],
+    "enter_words": ["אנטר", "enter"],
+    "media_words": ["מדיה", "נגן מדיה", "עצור מדיה", "media", "Media"],
+    "claude_code_wait_sec": 3.0,
+    "command_window_chunks": 3,
+    "argument_window_chunks": 4,
+    "command_fuzzy_threshold": 0.72
+  },
+  "apps": {},
+  "scripts": {},
+  "macros": {},
+  "whisper_model_size": "ivrit-ai/whisper-large-v3-ct2",
+  "whisper_device": "cuda",
+  "whisper_compute_type": "float16",
+  "whisper_cpu_fallback_model_size": "medium",
+  "whisper_cpu_fallback_compute_type": "int8",
+  "whisper_unload_on_mute": true,
+  "whisper_beam_size": 5,
+  "language": "he",
+  "whisper_initial_prompt": "דאוס, דיוס, היי דאוס, Deus",
+  "sample_rate": 16000,
+  "chunk_duration_sec": 2,
+  "silence_rms_threshold": 0.015,
+  "mic_device_index": null,
+  "gifs": {
+    "idle": "assets/deus_idle.gif",
+    "listening": "assets/deus_listening.gif",
+    "thinking": "assets/deus_thinking.gif",
+    "talking": "assets/deus_talking.gif",
+    "shut1": "assets/deus-shut1.gif",
+    "shut2": "assets/deus-shut2.gif"
+  },
+  "state_transitions": {
+    "shut1": "shut2"
+  },
+  "sounds": {
+    "enabled": true,
+    "volume": 100,
+    "dir": "assets/sounds",
+    "files": {
+      "wake_word": "blip",
+      "mute": "mute",
+      "unmute": "unmute",
+      "dictation_start": "dictation_start",
+      "dictation_stop": "dictation_stop",
+      "screenshot": "screenshot",
+      "youtube_search": "youtube_search",
+      "script_run": "script_run",
+      "model_loading": "model_loading",
+      "model_loaded": "model_loaded",
+      "model_unloading": "model_unloading",
+      "macro_learn_start": "macro_learn_start",
+      "macro_learn_stop": "macro_learn_stop",
+      "macro_play": "macro_play"
+    }
+  },
+  "window": {
+    "start_width": 480,
+    "start_height": 480,
+    "start_x": 100,
+    "start_y": 100,
+    "opacity": 1.0,
+    "always_on_top": true,
+    "min_size": 80,
+    "click_through": false,
+    "fade_duration_ms": 150
+  },
+  "ai_engine": {
+    "protocol_uri": "",
+    "window_title_hint": "Gemini",
+    "trigger_hotkey": "alt+g",
+    "try_voice_hotkey": true,
+    "trigger_cooldown_sec": 3,
+    "focus_wait_sec": 0.6,
+    "auto_speech": true,
+    "icons_dir": "assets/icons",
+    "icon_confidence_threshold": 0.8,
+    "icon_search_wait_sec": 0.7
+  },
+  "enable_logging": true,
+  "log_level": "DEBUG",
+  "hotkeys": {
+    "toggle_mute": "ctrl+alt+d"
+  },
+  "auto_hide": {
+    "enabled": true,
+    "states": [
+      "thinking"
+    ]
+  }
+}
